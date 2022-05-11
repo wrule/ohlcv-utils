@@ -9,5 +9,11 @@
   },
   "repository": "https://github.com/wrule/ohlcv-utils.git",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "@types/node": "^17.0.32",
+    "@types/papaparse": "^5.3.2",
+    "moment": "^2.29.3",
+    "papaparse": "^5.3.2"
+  }
 }
