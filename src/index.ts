@@ -56,3 +56,12 @@ function load_csv(filePath: string, interval = 60000): IOHLCV[] {
   });
   return result;
 }
+
+export
+function csv_dump_json(filePath: string, interval = 60000) {
+  const hist = load_csv(filePath, interval);
+  log('转化为json结构');
+  const jsonHist = hist.map((item) => item.source as number[]);
+  log('写入result.json文件');
+  fs.writeFileSync('result.json', JSON.stringify(jsonHist, null, 2));
+}
