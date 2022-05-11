@@ -1,0 +1,13 @@
+{
+  "name": "ohlcv-utils",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "node dist/index.js",
+    "watch": "tsc -w",
+    "build": "tsc"
+  },
+  "repository": "https://github.com/wrule/ohlcv-utils.git",
+  "license": "MIT",
+  "private": false
+}
